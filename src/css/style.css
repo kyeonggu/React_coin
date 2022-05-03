@@ -1,0 +1,17 @@
+body{Background-color: #333; padding: 20px 0;}
+.coin-title{font-family: "Noto Medium"; color: white; font-size: 30px; text-align: center;}
+.coin-list {max-width: 800px; margin: 0 auto; margin-top: 20px;}
+.coin-list li{margin-bottom: 20px; background-color: white; border-radius: 20px; padding: 10px 20px;}
+.coin-list li:last-child{margin-bottom: 0;}
+.coin-list li::after{content:""; display: table; clear: both;}
+.coin-list li div::after{content:""; display: table; clear: both;}
+.coin-list li .coin-content{float: left;}
+.coin-list li .coin-rank{float: left; font-family:'Dream Bold'; font-size: 20px; line-height: 32px;}
+.coin-list li .coin-name{float: left; line-height: 32px; color: #666; margin-left: 20px;}
+.coin-list li .coin-info{float: right; line-height: 32px;}
+.coin-list li .coin-info.coin-up{color: #e12343;}
+.coin-list li .coin-info.coin-down{color: #1763b6;}
+.coin-list li .coin-price{float: left; margin-right: 10px;}
+.coin-list li .coin-updown{float: left; padding-left: 20px; position: relative;}
+.coin-list li .coin-info.coin-up .coin-updown::after{content:""; display: block; position: absolute; width: 0; height: 0; border-bottom: 10px solid #e12343; border-left: 5px solid transparent; border-right: 5px solid transparent; left: 5px; top: 50%; margin-top: -5px;}
+.coin-list li .coin-info.coin-down .coin-updown::after{content:""; display: block; position: absolute; width: 0; height: 0; border-bottom: 10px solid #1763b6; border-left: 5px solid transparent; border-right: 5px solid transparent; left: 5px; top: 50%; margin-top: -5px; transform: rotate(180deg);}
